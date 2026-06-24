@@ -59,7 +59,7 @@ async function submitData() {
         //     2
         // );
 
-        const text = await response.text();
+        // const text = await response.text();
 
 console.log(text);
 
