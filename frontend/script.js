@@ -49,7 +49,7 @@ async function submitData() {
             }
         );
 
-        const result =
+        const text =
         await response.json();
 
         // output.textContent =
