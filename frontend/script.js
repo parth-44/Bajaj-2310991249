@@ -49,21 +49,16 @@ async function submitData() {
             }
         );
 
-        const text =
-        await response.json();
+       const result = await response.json();
 
-        // output.textContent =
-        // JSON.stringify(
-        //     result,
-        //     null,
-        //     2
-        // );
+console.log(result);
 
-        // const text = await response.text();
+output.textContent = JSON.stringify(
+    result,
+    null,
+    2
+);
 
-console.log(text);
-
-output.textContent = text;
 
         loading.textContent = "";
 
