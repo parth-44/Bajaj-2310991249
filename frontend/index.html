@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hierarchy Builder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🌳 Hierarchy Builder</h1>
+
+        <p class="subtitle">
+            Enter one relationship per line
+        </p>
+
+        <textarea
+            id="input"
+            placeholder="A->B&#10;A->C&#10;B->D">
+        </textarea>
+
+        <button onclick="submitData()">
+            Process Hierarchy
+        </button>
+
+        <div id="loading"></div>
+
+        <pre id="output"></pre>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
