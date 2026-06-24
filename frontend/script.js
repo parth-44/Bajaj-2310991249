@@ -36,7 +36,7 @@ async function submitData() {
 
         const response =
         await fetch(
-            "https://bajaj-2310991249.onrender.com",
+            "https://bajaj-2310991249.onrender.com/bfhl",
             {
                 method:"POST",
                 headers:{
@@ -52,12 +52,18 @@ async function submitData() {
         const result =
         await response.json();
 
-        output.textContent =
-        JSON.stringify(
-            result,
-            null,
-            2
-        );
+        // output.textContent =
+        // JSON.stringify(
+        //     result,
+        //     null,
+        //     2
+        // );
+
+        const text = await response.text();
+
+console.log(text);
+
+output.textContent = text;
 
         loading.textContent = "";
 
