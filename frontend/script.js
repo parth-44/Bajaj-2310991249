@@ -36,7 +36,7 @@ async function submitData() {
 
         const response =
         await fetch(
-            "http://localhost:3000/bfhl",
+            "https://bajaj-2310991249.onrender.com",
             {
                 method:"POST",
                 headers:{
